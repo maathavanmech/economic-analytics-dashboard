@@ -83,4 +83,4 @@ model.fit(X, y)
 
 future = model.predict([[len(X)]])
 
-st.success(f"Predicted Next Year Value: {round(float(future),2)}")
+st.success(f"Predicted Next Year Value: {round(float(future[0]), 2)}")
