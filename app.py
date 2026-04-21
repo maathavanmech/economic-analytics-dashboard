@@ -8,9 +8,7 @@ from sklearn.linear_model import LinearRegression
 st.set_page_config(page_title="Economic Dashboard", layout="wide")
 
 # ---------------- LOAD DATA ----------------
-df = pd.read_excel("Mad_1.xlsx")
-df = pd.read_excel("Mad_2.xlsx")
-
+df = pd.read_excel("Mad_2.xlsx")   # or Mad_1.xlsx
 # CLEANING
 df = df.dropna(axis=1, how='all')
 df.columns = df.iloc[3]
